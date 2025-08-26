@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
         "pages": 432,
@@ -8,14 +9,16 @@
         "image": "https://covers.openlibrary.org/b/id/8225261-L.webp"
     },
     {
+        "id": 2,
         "title": "1984",
         "author": "George Orwell",
         "pages": 328,
         "category": "Sci-Fi",
-        "price": 14.50,
+        "price": 14.5,
         "image": "https://covers.openlibrary.org/b/id/7222246-L.webp"
     },
     {
+        "id": 3,
         "title": "Dracula",
         "author": "Bram Stoker",
         "pages": 418,
@@ -24,6 +27,7 @@
         "image": "https://covers.openlibrary.org/b/id/8231992-L.webp"
     },
     {
+        "id": 4,
         "title": "Frankenstein",
         "author": "Mary Shelley",
         "pages": 280,
@@ -32,6 +36,7 @@
         "image": "https://covers.openlibrary.org/b/id/8091016-L.webp"
     },
     {
+        "id": 5,
         "title": "Moby Dick",
         "author": "Herman Melville",
         "pages": 635,
@@ -40,6 +45,7 @@
         "image": "https://covers.openlibrary.org/b/id/555222-L.webp"
     },
     {
+        "id": 6,
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "pages": 180,
@@ -48,22 +54,25 @@
         "image": "https://covers.openlibrary.org/b/id/7222276-L.webp"
     },
     {
+        "id": 7,
         "title": "War and Peace",
         "author": "Leo Tolstoy",
         "pages": 1225,
         "category": "History",
-        "price": 16.90,
+        "price": 16.9,
         "image": "https://covers.openlibrary.org/b/id/7222245-L.webp"
     },
     {
+        "id": 8,
         "title": "Anna Karenina",
         "author": "Leo Tolstoy",
         "pages": 864,
         "category": "Romance",
-        "price": 14.10,
+        "price": 14.1,
         "image": "https://covers.openlibrary.org/b/id/8235112-L.webp"
     },
     {
+        "id": 9,
         "title": "The Odyssey",
         "author": "Homer",
         "pages": 541,
@@ -72,6 +81,7 @@
         "image": "https://covers.openlibrary.org/b/id/8235283-L.webp"
     },
     {
+        "id": 10,
         "title": "The Iliad",
         "author": "Homer",
         "pages": 683,
@@ -80,6 +90,7 @@
         "image": "https://covers.openlibrary.org/b/id/8091234-L.webp"
     },
     {
+        "id": 11,
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "pages": 336,
@@ -88,75 +99,12 @@
         "image": "https://covers.openlibrary.org/b/id/8228691-L.webp"
     },
     {
+        "id": 12,
         "title": "Jane Eyre",
         "author": "Charlotte Brontë",
         "pages": 532,
         "category": "Romance",
-        "price": 11.50,
+        "price": 11.5,
         "image": "https://covers.openlibrary.org/b/id/8231989-L.webp"
-    },
-    {
-        "title": "Brave New World",
-        "author": "Aldous Huxley",
-        "pages": 268,
-        "category": "Sci-Fi",
-        "price": 13.75,
-        "image": "https://covers.openlibrary.org/b/id/7222243-L.webp"
-    },
-    {
-        "title": "Fahrenheit 451",
-        "author": "Ray Bradbury",
-        "pages": 249,
-        "category": "Sci-Fi",
-        "price": 12.80,
-        "image": "https://covers.openlibrary.org/b/id/11138456-L.webp"
-    },
-    {
-        "title": "The Picture of Dorian Gray",
-        "author": "Oscar Wilde",
-        "pages": 254,
-        "category": "Suspense",
-        "price": 11.20,
-        "image": "https://covers.openlibrary.org/b/id/8235081-L.webp"
-    },
-    {
-        "title": "The Call of Cthulhu",
-        "author": "H. P. Lovecraft",
-        "pages": 120,
-        "category": "Horror",
-        "price": 8.99,
-        "image": "https://covers.openlibrary.org/b/id/8235300-L.webp"
-    },
-    {
-        "title": "The Art of War",
-        "author": "Sun Tzu",
-        "pages": 273,
-        "category": "History of manners",
-        "price": 9.50,
-        "image": "https://covers.openlibrary.org/b/id/8235576-L.webp"
-    },
-    {
-        "title": "Meditations",
-        "author": "Marcus Aurelius",
-        "pages": 304,
-        "category": "History of manners",
-        "price": 10.75,
-        "image": "https://covers.openlibrary.org/b/id/8235205-L.webp"
-    },
-    {
-        "title": "The Prince",
-        "author": "Niccolò Machiavelli",
-        "pages": 140,
-        "category": "History of manners",
-        "price": 9.20,
-        "image": "https://covers.openlibrary.org/b/id/8235211-L.webp"
-    },
-    {
-        "title": "Hamlet",
-        "author": "William Shakespeare",
-        "pages": 210,
-        "category": "Old",
-        "price": 10.99,
-        "image": "https://covers.openlibrary.org/b/id/8235101-L.webp"
     }
 ]
