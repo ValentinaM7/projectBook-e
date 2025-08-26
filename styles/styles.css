@@ -1,0 +1,258 @@
+@media screen and (max-width: 400px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: #2fc2ad;
+        list-style: none;
+        padding: 10px;
+    }
+
+    nav ul li .nav-link,
+    nav ul li .nav-link:visited,
+    nav ul li .nav-link:active {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li .nav-link:hover {
+        color: #0e3d36;
+    }
+
+    .cat-item {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        background-color: #FDC5B4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        gap: 25px;
+        padding: 20px;
+        margin: 25px;
+        place-content: center;
+
+    }
+
+    .categories-btn {
+        font-family: "Kufam", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        border: none;
+        width: auto;
+        background-color: white;
+        color: #2fc2ad;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 18px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .list-of-books {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .deals {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .list-of-books {
+        border: none;
+    }
+
+    .list-of-books .libro-picandtext {
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 8px;
+        max-width: 400px;
+        text-align: left;
+        cursor: pointer;
+        border: none;
+        max-height: 120px;
+        border-radius: 8px;
+    }
+
+    .list-of-books .libro-picandtext img {
+        width: 90px;
+        border-radius: 6px;
+        height: 90px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .list-of-books .libro-picandtext .libro-detalles {
+        max-height: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .list-of-books .libro-picandtext .libro-detalles h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        margin: 0 0 4px 0;
+        line-height: 1.2;
+        word-break: break-word;
+    }
+
+    .list-of-books .libro-picandtext .libro-detalles .author {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: light;
+        margin: 0 0 4px 0;
+    }
+
+    .list-of-books .libro-picandtext .libro-detalles .pages {
+        font-family: "Inter", sans-serif;
+        font-size: 10px;
+        font-weight: 100;
+        margin: 0 0 4px 0;
+    }
+
+    .list-of-books .libro-picandtext .libro-detalles .price {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #50A99A;
+        margin: 0px;
+    }
+
+    .libro-detalles>* {
+        margin: 5px;
+
+    }
+
+    #myAside {
+        position: fixed;
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 80%;
+        background-color: #e3ebea;
+        box-shadow: -2px 0 5px rgba (0, 0, 0, 0, 1);
+        padding: 10px;
+        transition: bottom 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myAside.show {
+        bottom: 0;
+    }
+
+    #myAside .book-details .ekis {
+        position: fixed;
+        right: 20px;
+        border-radius: 8px;
+        border: #2FC2AD solid 0.5px;
+        color: #2fc2ad;
+    }
+
+    #myAside .book-details {
+        margin: 20px;
+        height: 80%;
+        width: 70%;
+        overflow-y: auto;
+        padding: 10px;
+    }
+
+    #myAside .book-details img {
+        border-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #myAside .book-details h3 {
+        font-style: "Inter", sans-serif;
+        margin: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    #myAside .book-details .author {
+        margin: 5px;
+        font-style: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: light;
+    }
+
+    #myAside .book-details .pages {
+        margin: 5px;
+        font-style: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: thin;
+    }
+
+    #myAside .book-details .category {
+        margin: 5px;
+        font-style: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: #2FC2AD solid;
+        border-radius: 20px;
+        background-color: #2FC2AD transparent;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    #myAside .book-details .price {
+        margin: 5px;
+        font-style: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2FC2AD;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    #myAside .book-details .cta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #myAside .book-details .cta .add {
+        width: 100%;
+        height: 50px;
+        border-radius: 4px;
+        background-color: #FFFCFC;
+        border: solid #2FC2AD;
+        font-style: "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #myAside .book-details .cta .buynow {
+        width: 100%;
+        height: 50px;
+        border-radius: 4px;
+        background-color: #2FC2AD;
+        border: #2FC2AD;
+        font-style: "Segoe UI", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}
