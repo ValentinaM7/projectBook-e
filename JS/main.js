@@ -5,6 +5,7 @@ const informacionLibros = document.getElementById("book-detailsjs");
 const openBtn = document.getElementById("openBtn");
 const detailsaside = document.getElementById("aside-detalles");
 
+
 openBtn.addEventListener("click", () => {
   aside.classList.add("show");
 });
@@ -213,6 +214,9 @@ const templateLibros = () => {
 const showBookDetails = (bookId) => {
   const book = books.find((b) => b.id === bookId); // Encuentra el libro con el id correspondiente
 
+  const add = document.getElementById("addtocartjs");
+  const buy = document.getElementById("buynowjs");
+  
   detailsaside.innerHTML = `
         <div class="book-details" id="${book.id}" >
             <img src="${book.image}" alt="${book.title}">

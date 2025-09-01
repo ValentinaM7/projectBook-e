@@ -86,7 +86,7 @@
     }
 
     .list-of-books .libro-picandtext img {
-        width: 90px;
+        width: 70px;
         border-radius: 6px;
         height: 90px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -132,6 +132,14 @@
         margin: 0px;
     }
 
+    .list-of-books .libro-picandtext .showBookDetails{
+        width: 90px;
+        border-radius: 6px;
+        height: 90px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+
     .libro-detalles>* {
         margin: 5px;
 
@@ -160,26 +168,27 @@
     .detailsandclose .ekis {
         text-align: right;
         position: relative;
-        right: 20px;
         border-radius: 8px;
         border: #2FC2AD solid 0.5px;
         color: #2fc2ad;
     }
 
     #myAside .book-details {
-        margin: 20px;
-        height: 80%;
-        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 95%;
+        width: 95%;
         overflow-y: auto;
         padding: 10px;
     }
 
     #myAside .book-details img {
         border-top: 20px;
-        text-align: center;
         border-radius: 10px;
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: 30%;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
@@ -204,6 +213,7 @@
         font-size: 12px;
         font-weight: thin;
     }
+    
 
     #myAside .book-details .category {
         margin: 5px;
@@ -233,7 +243,7 @@
     }
 
     #myAside .book-details .cta .add {
-        width: 100%;
+        width: 200px;
         height: 50px;
         border-radius: 4px;
         background-color: #FFFCFC;
