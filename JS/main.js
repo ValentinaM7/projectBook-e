@@ -4,7 +4,10 @@ const cerrarBtn = document.getElementById("close");
 const informacionLibros = document.getElementById("book-detailsjs");
 const openBtn = document.getElementById("openBtn");
 const detailsaside = document.getElementById("aside-detalles");
-
+const carroFisico = document.getElementById("carrito-fisico");
+const listadeCompra = document.getElementById("lista-compra");
+const cerrarcarro = document.getElementById("cerrar-carrito");
+const listacarro = document.getElementById("list-cart");
 
 openBtn.addEventListener("click", () => {
   aside.classList.add("show");
@@ -13,6 +16,16 @@ openBtn.addEventListener("click", () => {
 cerrarBtn.addEventListener("click", () => {
   aside.classList.remove("show");
 });
+
+carroFisico.addEventListener("click", () => {
+  listadeCompra.classList.add("show");
+});
+
+cerrarcarro.addEventListener("click", () => {
+  listadeCompra.classList.remove("show");
+});
+
+let carrito = [];
 
 const books = [
   {
@@ -211,26 +224,80 @@ const templateLibros = () => {
   });
 };
 
+const agregadoraDeLibros = () => {
+  listacarro.innerHTML = " ";
+  carrito.forEach((book) => {
+    listacarro.innerHTML += ` <div class="casilla" id=${book.id}>
+              <h3>${book.title}</h3>
+              <p class="author">${book.author}</p>
+              <p class="price">$${book.price}</p>
+              <button class="remove">-</button>
+                </div>`;
+  });
+};
+
 const showBookDetails = (bookId) => {
   const book = books.find((b) => b.id === bookId); // Encuentra el libro con el id correspondiente
 
-  const add = document.getElementById("addtocartjs");
-  const buy = document.getElementById("buynowjs");
-  
-  detailsaside.innerHTML = `
-        <div class="book-details" id="${book.id}" >
-            <img src="${book.image}" alt="${book.title}">
-            <h3>${book.title}</h3>
-            <p class="author">${book.author}</p>
-            <p class="pages">${book.pages} pages</p>
-            <p class="category">${book.category}</p>
-            <p class="price">$${book.price}</p>
-            <div class="cta">
-                <button class="add" id="addtocartjs">Add to cart</button>
-                <button class="buynow" id="buynowjs">Buy now</button>
-            </div>
-        </div>`;
+  const asideConBoton = `<div class="book-details" id=${book.id}>
+              <img src="${book.image}" alt="${book.title}">
+              <h3>${book.title}</h3>
+              <p class="author">${book.author}</p>
+              <p class="pages">${book.pages} pages</p>
+              <p class="category">${book.category}</p>
+              <p class="price">$${book.price}</p>
+              <div class="cta">
+                  <button class="add">Add to cart</button>
+                  <button class="buynow" id="ya">Buy now</button>
+              </div>
+          </div>`;
+
+  detailsaside.innerHTML = asideConBoton;
+
+  setTimeout(() => {
+    //ejecutamos las dos funciones juntas ya que innerhtml es sincrono en codigo
+
+    const botonAdd = document.getElementsByClassName("add");
+    
+
+
+    const arrayBotonesAdd = Array.from(botonAdd);
+
+    arrayBotonesAdd.forEach((boton) => {
+      boton.addEventListener("click", (event) => {
+        let id = event.target.parentNode.parentNode.id;
+
+        let book = books.find((b) => b.id === bookId);
+        carrito.push({ ...book });
+        agregadoraDeLibros();
+      });
+    });
+  });
+
+  const compra = document.getElementById("ya");
+  compra.addEventListener("click", () => {
+    Swal.fire({
+      title: "Drag me!",
+      icon: "success",
+      draggable: true,
+    });
+  });
+
+  // // botonAdd.forEach = (boton => {
+  // //   botonAdd.addEventListener("click", () => {
+  // //     Swal.fire({
+  // //       position: "center",
+  // //       width: "75%",
+  // //       toast: true,
+  // //       icon: "success",
+  // //       iconColor: "#2FC2AD",
+  // //       title: "You added a new book",
+  // //       showConfirmButton: false,
+  // //       timer: 1200,
+  // //     });
+  // //   });
 };
+templateLibros();
 
 // document.addEventListener("DOMContentLoaded", async () => {
 //     try{
@@ -247,6 +314,3 @@ const showBookDetails = (bookId) => {
 //         console.error(error);
 //     }
 // });
-
-templateLibros();
-showBookDetails();
