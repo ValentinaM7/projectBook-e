@@ -39,17 +39,18 @@
 
     .categories {
         display: grid;
-        grid-template-columns: 70px 70px 70px;
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
         padding: 20px;
         margin: 25px;
-        place-content: center;
+        justify-content: center;;
 
     }
 
     .categories-btn {
         font-family: "Kufam", sans-serif;
         font-optical-sizing: auto;
+        font-size: 10px !important;
         font-style: normal;
         border: none;
         width: auto;
@@ -354,4 +355,37 @@
     font-weight: bold;
     color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#swal2-title{
+    font-style: "Segoe UI", Arial;
+    font-size: 16px !important;
+}
+#swal2-input{
+     font-style: "Segoe UI", Arial;
+    font-size: 12px !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){
+    font-style: "Segoe UI", Arial;
+    font-size: 12px !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel){
+    font-style: "Segoe UI", Arial;
+    font-size: 12px !important;
+}
+div:where(.swal2-container) div:where(.swal2-validation-message){
+    font-style: "Segoe UI", Arial;
+    font-size: 10px !important;
+}
+div:where(.swal2-container) div:where(.swal2-validation-message)::before {
+    background-color: #bc3030;
+}
+button, input, select, textarea, optgroup{
+    font-style: "Segoe UI", Arial;
+    font-size: 12px !important;
+}
+#swal2-html-container{
+    font-style: "Segoe UI", Arial;
+    font-size: 12px !important;
 }
