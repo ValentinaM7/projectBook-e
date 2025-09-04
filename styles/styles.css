@@ -200,6 +200,7 @@
 
 #lista-compra.show {
     right: 0;
+    overflow-y: scroll;
 }
 
 #lista-compra .titleList {
@@ -228,7 +229,19 @@
     font-size: 12px;
     font-weight: bold;
 }
-
+.carritocostado .pagar {
+    width: 80%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #2FC2AD;
+    border: #2FC2AD;
+    font-style: "Segoe UI", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+}
 .casilla {
     position: relative;
     padding: 10px;
@@ -278,7 +291,7 @@
     border-top: 20px;
     border-radius: 10px;
     width: auto;
-    height: 30%;
+    height: 60px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 

@@ -8,6 +8,8 @@ const listadeCompra = document.getElementById("lista-compra");
 const cerrarcarro = document.getElementById("cerrar-carrito");
 const listacarro = document.getElementById("list-cart");
 const categorias = document.getElementById("lista-categorias");
+const totalPagar = document.getElementById("total");
+const pagarlibrosfin = document.getElementById("pagarlibros");
 
 openBtn.addEventListener("click", () => {
   aside.classList.add("show");
@@ -274,6 +276,16 @@ const templateLibros = () => {
     });
 };
 
+const calculadoraTotal = () => {
+    let total = carrito.reduce((acc, el) => {
+      const soloNumero =parseFloat(el.price)  
+      return (acc += soloNumero)
+    }, 0)
+
+    return total
+  }
+
+
 const agregadoraDeLibros = () => {
   listacarro.innerHTML = " ";
   carrito.forEach((book) => {
@@ -283,7 +295,13 @@ const agregadoraDeLibros = () => {
               <p class="price">$${book.price}</p>
               <button class="remove">-</button>
                 </div>`;
-  });
+  })
+
+  let calculoTotal = calculadoraTotal()
+
+  totalPagar.innerHTML = `<p class="total">Total: $ ${calculoTotal}</p>`
+
+};
   
   // const borrar = document.querySelectorAll ('.remove');
   //   borrar.forEach((botonborrar) =>{
@@ -292,7 +310,7 @@ const agregadoraDeLibros = () => {
   //       ElementoABorrar.toggle();   
   //     });
   //   });
-  }
+  
 
 
 const showBookDetails = (bookId) => {
@@ -366,6 +384,40 @@ const showBookDetails = (bookId) => {
     });
   });
 };
+pagarlibrosfin.addEventListener("click", () => {
+  Swal.fire({
+      title: "Type your credit card details",
+      html: `
+    <input type="text" 
+           id="idInput" 
+           pattern="[0-9]{12}">
+  `,
+      showCancelButton: true,
+      confirmButtonText: "Save",
+      confirmButtonColor: "#2FC2AD",
+      cancelButtonText: "Cancel",
+      cancelButtonColor: "#0e3d36",
+      preConfirm: () => {
+        const input = document.getElementById("idInput");
+        if (!input.value || !input.validity.valid) {
+          Swal.showValidationMessage("Please 12 use numbers");
+          return false; // Evita que se cierre el modal si no es válido
+        }
+        return input.value;
+      },
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "You bought a new book!",
+          text: "We will send you an email with the tracking number",
+          icon: "success",
+          confirmButtonText: "Great!",
+          confirmButtonColor: "#2FC2AD",
+        });}
+  carrito = []
+  agregadoraDeLibros()
+})});
+
 templateLibros();
 getCategoriasUnicas();
 
