@@ -6,7 +6,7 @@
         "pages": 432,
         "category": "Romance",
         "price": 12.99,
-        "image": "https://covers.openlibrary.org/b/id/8225261-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/8225261-L.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "pages": 328,
         "category": "Sci-Fi",
         "price": 14.5,
-        "image": "https://covers.openlibrary.org/b/id/7222246-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
     },
     {
         "id": 3,
@@ -24,16 +24,7 @@
         "pages": 418,
         "category": "Horror",
         "price": 11.75,
-        "image": "https://covers.openlibrary.org/b/id/8231992-L.webp"
-    },
-    {
-        "id": 4,
-        "title": "Frankenstein",
-        "author": "Mary Shelley",
-        "pages": 280,
-        "category": "Horror",
-        "price": 10.99,
-        "image": "https://covers.openlibrary.org/b/id/8091016-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/8231992-L.jpg"
     },
     {
         "id": 5,
@@ -42,16 +33,7 @@
         "pages": 635,
         "category": "Old",
         "price": 13.25,
-        "image": "https://covers.openlibrary.org/b/id/555222-L.webp"
-    },
-    {
-        "id": 6,
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "pages": 180,
-        "category": "Old",
-        "price": 9.99,
-        "image": "https://covers.openlibrary.org/b/id/7222276-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/555222-L.jpg"
     },
     {
         "id": 7,
@@ -60,7 +42,7 @@
         "pages": 1225,
         "category": "History",
         "price": 16.9,
-        "image": "https://covers.openlibrary.org/b/id/7222245-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/7222245-L.jpg"
     },
     {
         "id": 8,
@@ -69,7 +51,7 @@
         "pages": 864,
         "category": "Romance",
         "price": 14.1,
-        "image": "https://covers.openlibrary.org/b/id/8235112-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/8235112-L.jpg"
     },
     {
         "id": 9,
@@ -78,7 +60,7 @@
         "pages": 541,
         "category": "Old",
         "price": 15.99,
-        "image": "https://covers.openlibrary.org/b/id/8235283-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/8235283-L.jpg"
     },
     {
         "id": 10,
@@ -87,7 +69,7 @@
         "pages": 683,
         "category": "Old",
         "price": 15.99,
-        "image": "https://covers.openlibrary.org/b/id/8091234-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/8091234-L.jpg"
     },
     {
         "id": 11,
@@ -96,7 +78,7 @@
         "pages": 336,
         "category": "New",
         "price": 12.99,
-        "image": "https://covers.openlibrary.org/b/id/8228691-L.webp"
+        "image": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
     },
     {
         "id": 12,
@@ -105,6 +87,89 @@
         "pages": 532,
         "category": "Romance",
         "price": 11.5,
-        "image": "https://covers.openlibrary.org/b/id/8231989-L.webp"
-    }
+        "image": "https://covers.openlibrary.org/b/id/8231989-L.jpg"
+    },
+    {
+    "id": 13,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "pages": 671,
+    "category": "History",
+    "price": 13.99,
+    "image": "https://covers.openlibrary.org/b/id/8231806-L.jpg"
+},
+{
+    "id": 14,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "pages": 824,
+    "category": "History",
+    "price": 15.5,
+    "image": "https://covers.openlibrary.org/b/id/8231841-L.jpg"
+},
+{
+    "id": 16,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "pages": 277,
+    "category": "New",
+    "price": 12.5,
+    "image": "https://covers.openlibrary.org/b/id/8232374-L.jpg"
+},
+{
+    "id": 17,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "pages": 310,
+    "category": "Fantasy",
+    "price": 13.99,
+    "image": "https://covers.openlibrary.org/b/id/8107899-L.jpg"
+},
+{
+    "id": 18,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "pages": 1178,
+    "category": "Fantasy",
+    "price": 19.99,
+    "image": "https://covers.openlibrary.org/b/id/8231993-L.jpg"
+},
+{
+    "id": 19,
+    "title": "Harry Potter and the Sorcerer’s Stone",
+    "author": "J.K. Rowling",
+    "pages": 309,
+    "category": "Fantasy",
+    "price": 11.25,
+    "image": "https://covers.openlibrary.org/b/id/7884866-L.jpg"
+},
+{
+    "id": 20,
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "pages": 341,
+    "category": "Fantasy",
+    "price": 11.99,
+    "image": "https://covers.openlibrary.org/b/id/7884867-L.jpg"
+},
+{
+    "id": 21,
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "pages": 435,
+    "category": "Fantasy",
+    "price": 12.5,
+    "image": "https://covers.openlibrary.org/b/id/7884868-L.jpg"
+},
+{
+    "id": 22,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "pages": 208,
+    "category": "New",
+    "price": 9.99,
+    "image": "https://covers.openlibrary.org/b/id/8232385-L.jpg"
+}
 ]
+
+

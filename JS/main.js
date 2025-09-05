@@ -11,6 +11,7 @@ const categorias = document.getElementById("lista-categorias");
 const totalPagar = document.getElementById("total");
 const pagarlibrosfin = document.getElementById("pagarlibros");
 const contenedorLibros = document.getElementById("contenedor-libros");
+const newspost = document.getElementById("news-post")
 
 openBtn.addEventListener("click", () => {
   aside.classList.add("show");
@@ -28,9 +29,10 @@ cerrarcarro.addEventListener("click", () => {
   listadeCompra.classList.remove("show");
 });
 
-let carrito = [];
 
 const books = [];
+const posts = [];
+
 
 const getCategoriasUnicas = () => {
   const categoriasLibros = books.map((book) => book.category); //Traemos todas las categorias a una nueva lista array
@@ -108,30 +110,23 @@ const calculadoraTotal = () => {
 
 const agregadoraDeLibros = () => {
   listacarro.innerHTML = " ";
-  carrito.forEach((book) => {
-    listacarro.innerHTML += ` <div class="casilla" id=${book.id}>
+  carrito.forEach((book, index) => {
+    listacarro.innerHTML += ` <div class="casilla" data-index="${index}" id=${book.id}>
               <h3>${book.title}</h3>
               <p class="author">${book.author}</p>
               <p class="price">$${book.price}</p>
               <button class="remove">-</button>
                 </div>`;
   })
-
+  console.dir(listacarro)
   let calculoTotal = calculadoraTotal()
 
   totalPagar.innerHTML = `<p class="total">Total: $ ${calculoTotal}</p>`
 
+  saveCart();
 };
   
-  // const borrar = document.querySelectorAll ('.remove');
-  //   borrar.forEach((botonborrar) =>{
-  //     botonborrar.addEventListener("click", (e) => {
-  //       const ElementoABorrar = e.target.ParentElement;
-  //       ElementoABorrar.toggle();   
-  //     });
-  //   });
   
-
 
 const showBookDetails = (bookId) => {
   const book = books.find((b) => b.id === bookId); // Encuentra el libro con el id correspondiente
@@ -239,6 +234,13 @@ pagarlibrosfin.addEventListener("click", () => {
 })});
 
 
+let carrito = [];
+
+const saveCart = () => {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+
 document.addEventListener("DOMContentLoaded", async () => {
     try{
         let res = await fetch("json/object.json");
@@ -251,9 +253,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log(data)
         templateLibros();
         getCategoriasUnicas();
+        saveCart();
     }
     catch (error){
         console.error(error);
     }
+    
 });
 
