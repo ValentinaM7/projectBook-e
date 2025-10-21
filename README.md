@@ -1,0 +1,1 @@
+A project I started while taking a UX/UI Design course, which motivated me to keep studying Front-End Development. If you’d like to see the project, it’s here: https://www.behance.net/gallery/215762945/MVP-UXUI-STUDY-CASE
